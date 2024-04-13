@@ -1,9 +1,38 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/SotaYamaguchi/DotNetCoreMvcSample</RepositoryUrl>
+	<EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+	<AnalysisLevelDesign>latest-recommended</AnalysisLevelDesign>
+	<AnalysisLevelDocumentation>latest-recommended</AnalysisLevelDocumentation>
+	<AnalysisLevelGlobalization>latest-recommended</AnalysisLevelGlobalization>
+	<AnalysisLevelInteroperability>latest-recommended</AnalysisLevelInteroperability>
+	<AnalysisLevelMaintainability>latest-recommended</AnalysisLevelMaintainability>
+	<AnalysisLevelNaming>latest-recommended</AnalysisLevelNaming>
+	<AnalysisLevelPerformance>latest-recommended</AnalysisLevelPerformance>
+	<AnalysisLevelSingleFile>latest-recommended</AnalysisLevelSingleFile>
+	<AnalysisLevelReliability>latest-recommended</AnalysisLevelReliability>
+	<AnalysisLevelSecurity>latest-recommended</AnalysisLevelSecurity>
+	<AnalysisLevelStyle>latest-recommended</AnalysisLevelStyle>
+	<AnalysisLevelUsage>latest-recommended</AnalysisLevelUsage>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="C:\Users\area0\workspace\MvcSample\MvcSample\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\area0\workspace\MvcSample\MvcSample\.editorconfig" />
+  </ItemGroup>
 
 </Project>
